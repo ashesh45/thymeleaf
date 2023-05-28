@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>loop example</title>
+</head>
+<body>
+<h1> going to transverse element</h1>
+<h1 th:text="${name}"></h1>
+
+<ul>
+     <li th:each="n : ${names}" >
+      <span th:text="${n}" ></span>
+       </li>
+     
+</ul>
+</body>
+</html>
